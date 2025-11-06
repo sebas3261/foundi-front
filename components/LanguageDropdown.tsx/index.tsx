@@ -5,19 +5,31 @@ import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { Icon } from "@iconify/react";
 
 const LANGUAGES = [
-  { code: "en", label: "En"},
+  { code: "en", label: "En" },
   { code: "es", label: "Es" },
-  { code: "fr", label: "Fr" }
+  { code: "fr", label: "Fr" },
+  { code: "pt", label: "Pt" }
 ] as const;
 
-const LOCALE_RE = /^\/(en|es|fr)(\/|$)/;
+const LOCALE_CODES = LANGUAGES.map(l => l.code).join("|");
+// ^ /(en|es|fr|pt)(/|$)
+const LOCALE_RE = new RegExp(`^\\/(${LOCALE_CODES})(\\/|$)`);
+
+// Quita TODOS los prefijos de idioma al inicio: /pt/en/xyz -> /xyz
+function stripAllLocales(pathname: string) {
+  let p = pathname;
+  // Mientras comience con /{locale}(/|$), lo elimina
+  while (LOCALE_RE.test(p)) {
+    p = p.replace(LOCALE_RE, "$2"); // conserva el '/' si existía
+  }
+  if (!p.startsWith("/")) p = "/" + p;
+  return p === "" ? "/" : p;
+}
 
 function buildLocalePath(pathname: string, target: string) {
-  if (LOCALE_RE.test(pathname)) {
-    return pathname.replace(LOCALE_RE, `/${target}$2`);
-  }
-  const needsSlash = pathname.startsWith("/") ? "" : "/";
-  return `/${target}${needsSlash}${pathname}`;
+  const rest = stripAllLocales(pathname); // sin ningún prefijo de idioma
+  // Si rest es '/', no duplicar la barra final
+  return rest === "/" ? `/${target}` : `/${target}${rest}`;
 }
 
 export default function LanguageDropdown() {
@@ -26,11 +38,9 @@ export default function LanguageDropdown() {
   const searchParams = useSearchParams();
 
   const currentLang =
-    (pathname.match(/^\/(en|es|fr)(?:\/|$)/)?.[1] as
-      | "en"
-      | "es"
-      | "fr"
-      | undefined) ?? "en";
+    (pathname.match(new RegExp(`^\\/(${LOCALE_CODES})(?:\\/|$)`))?.[1] as
+      | (typeof LANGUAGES)[number]["code"]
+      | undefined) ?? LANGUAGES[0].code;
 
   const [open, setOpen] = useState(false);
   const btnRef = useRef<HTMLButtonElement | null>(null);
@@ -49,7 +59,6 @@ export default function LanguageDropdown() {
     router.replace(href);
   };
 
-  // Cerrar con click fuera
   useEffect(() => {
     const onClick = (e: MouseEvent) => {
       if (
@@ -66,7 +75,6 @@ export default function LanguageDropdown() {
     return () => document.removeEventListener("mousedown", onClick);
   }, []);
 
-  // Cerrar con Escape
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setOpen(false);
@@ -77,7 +85,6 @@ export default function LanguageDropdown() {
 
   return (
     <div className="relative">
-      {/* Botón (misma estética que tu toggle de tema) */}
       <button
         ref={btnRef}
         onClick={() => setOpen((v) => !v)}
@@ -89,26 +96,17 @@ export default function LanguageDropdown() {
         <span className="text-sm font-medium">{current.label}</span>
         <Icon
           icon="lucide:chevron-down"
-          className={`w-4 h-4 transition-transform duration-300 ${
-            open ? "rotate-180" : ""
-          }`}
+          className={`w-4 h-4 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
         />
       </button>
 
-      {/* Menú desplegable hacia abajo */}
       {open && (
         <div
           id="lang-menu"
           ref={menuRef}
           role="menu"
           aria-label="Select language"
-          className="
-            absolute right-0 mt-2 z-50
-            min-w-40 overflow-hidden rounded-xl border
-            border-gray-100 dark:border-gray-700
-            bg-white dark:bg-[#1F1F1F] shadow-lg
-            focus:outline-none
-          "
+          className="absolute right-0 mt-2 z-50 min-w-40 overflow-hidden rounded-xl border border-gray-100 dark:border-gray-700 bg-white dark:bg-[#1F1F1F] shadow-lg focus:outline-none"
         >
           {LANGUAGES.map((lang) => {
             const active = lang.code === currentLang;
@@ -117,21 +115,12 @@ export default function LanguageDropdown() {
                 key={lang.code}
                 role="menuitem"
                 onClick={() => onSelect(lang.code)}
-                className={`
-                  w-full px-4 py-2 text-sm flex items-center gap-2 text-left
-                  transition duration-200
-                  hover:bg-[#A7A9F2] hover:text-white
-                  hover:dark:bg-[#333777]
-                  ${active ? "font-semibold" : ""}
-                `}
+                className={`w-full px-4 py-2 text-sm flex items-center gap-2 text-left transition duration-200 hover:bg-[#A7A9F2] hover:text-white hover:dark:bg-[#333777] ${
+                  active ? "font-semibold" : ""
+                }`}
               >
                 {lang.label}
-                {active && (
-                  <Icon
-                    icon="lucide:check"
-                    className="ml-auto w-4 h-4 opacity-80"
-                  />
-                )}
+                {active && <Icon icon="lucide:check" className="ml-auto w-4 h-4 opacity-80" />}
               </button>
             );
           })}
