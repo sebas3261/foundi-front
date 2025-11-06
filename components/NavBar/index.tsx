@@ -1,5 +1,4 @@
 "use client";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 import { useTheme } from "next-themes";
@@ -7,12 +6,18 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { Icon } from "@iconify/react";
 
+import { useLocale, useTranslations } from "next-intl";
+import { useRouter, usePathname } from "next/navigation";
+import LanguageDropdown from "../LanguageDropdown.tsx";
+
 export default function NavBar() {
   const t = useTranslations("navbar");
   const { theme, setTheme, systemTheme } = useTheme();
   const { lang } = useParams();
 
   const currentTheme = theme === "system" ? systemTheme : theme;
+
+  
   return (
     <header className="px-5 py-3 fixed top-0 left-0 right-0 z-50 text-sm bg-white/90 text-black shadow-sm md:backdrop-saturate-150 flex flex-row items-center justify-between text-black dark:text-white dark:bg-[#1F1F1F]/80">
       <Link href="/" className="flex items-center gap-1 group">
@@ -89,7 +94,10 @@ export default function NavBar() {
           {t("premium")}
         </Link>
       </div>
-      <button
+
+      <div className="flex flex-row items-center justify-center">
+        <LanguageDropdown />
+        <button
         onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
         className="p-2 rounded-xl hover:bg-[#A7A9F2] hover:text-white hover:dark:bg-[#333777] text-gray-800 dark:text-gray-200 transition duration-300"
       >
@@ -99,6 +107,7 @@ export default function NavBar() {
           <Icon icon="lucide:moon" className="w-4 h-4" />
         )}
       </button>
+      </div>
     </header>
   );
 }
