@@ -1,5 +1,7 @@
 {
-    "home":{
-        "title" : "To get started, edit the page.tsx file."
-    }
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "language": "Language"
+  }
 }

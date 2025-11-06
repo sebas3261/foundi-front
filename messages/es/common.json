@@ -1,5 +1,7 @@
 {
-    "home":{
-        "title" : "El titulo en español."
-    }
+  "common": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "language": "Idioma"
+  }
 }
