@@ -17,7 +17,6 @@ export default function NavBar() {
 
   const currentTheme = theme === "system" ? systemTheme : theme;
 
-  
   return (
     <header className="px-5 py-3 fixed top-0 left-0 right-0 z-50 text-sm bg-white/90 text-black shadow-sm md:backdrop-saturate-150 flex flex-row items-center justify-between text-black dark:text-white dark:bg-[#1F1F1F]/80">
       <Link href="/" className="flex items-center gap-1 group">
@@ -68,7 +67,7 @@ export default function NavBar() {
         </h1>
       </Link>
 
-      <div className="flex flex-row gap-5 font-semibold">
+      <div className="hidden md:flex flex-row gap-5 font-semibold">
         <Link
           href={`/`}
           className="hover:text-[#6065E3] transition duration-300"
@@ -95,18 +94,24 @@ export default function NavBar() {
         </Link>
       </div>
 
-      <div className="flex flex-row items-center justify-center">
+      <div className="flex flex-row items-center justify-center gap-1">
         <LanguageDropdown />
         <button
-        onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
-        className="p-2 rounded-xl hover:bg-[#A7A9F2] hover:text-white hover:dark:bg-[#333777] text-gray-800 dark:text-gray-200 transition duration-300"
-      >
-        {currentTheme === "dark" ? (
-          <Icon icon="lucide:sun" className="w-4 h-4" />
-        ) : (
-          <Icon icon="lucide:moon" className="w-4 h-4" />
-        )}
-      </button>
+          onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
+          className="p-2 rounded-xl hover:bg-[#A7A9F2] hover:text-white hover:dark:bg-[#333777] text-gray-800 dark:text-gray-200 transition duration-300 cursor-pointer"
+        >
+          {currentTheme === "dark" ? (
+            <Icon icon="lucide:sun" className="w-4 h-4" />
+          ) : (
+            <Icon icon="lucide:moon" className="w-4 h-4" />
+          )}
+        </button>
+        <Link
+          href={"/login"}
+          className="p-2 rounded-xl bg-[#6065E3] text-white font-semibold"
+        >
+          {t("log-in")}
+        </Link>
       </div>
     </header>
   );

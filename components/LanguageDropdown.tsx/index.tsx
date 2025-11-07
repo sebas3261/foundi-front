@@ -88,7 +88,7 @@ export default function LanguageDropdown() {
       <button
         ref={btnRef}
         onClick={() => setOpen((v) => !v)}
-        className="p-2 rounded-xl hover:bg-[#A7A9F2] hover:text-white hover:dark:bg-[#333777] text-gray-800 dark:text-gray-200 transition duration-300 flex items-center gap-2"
+        className="p-2 rounded-xl hover:bg-[#A7A9F2] hover:text-white hover:dark:bg-[#333777] text-gray-800 dark:text-gray-200 transition duration-300 flex items-center gap-2 cursor-pointer"
         aria-haspopup="menu"
         aria-expanded={open}
         aria-controls="lang-menu"
@@ -115,7 +115,7 @@ export default function LanguageDropdown() {
                 key={lang.code}
                 role="menuitem"
                 onClick={() => onSelect(lang.code)}
-                className={`w-full px-4 py-2 text-sm flex items-center gap-2 text-left transition duration-200 hover:bg-[#A7A9F2] hover:text-white hover:dark:bg-[#333777] ${
+                className={`w-full px-4 py-2 text-sm flex items-center gap-2 text-left transition duration-200 hover:bg-[#A7A9F2] hover:text-white hover:dark:bg-[#333777] cursor-pointer ${
                   active ? "font-semibold" : ""
                 }`}
               >
