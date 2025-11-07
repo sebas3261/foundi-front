@@ -110,7 +110,9 @@ export default function NavBar() {
         </button>
         <Link
           href={"/login"}
-          className="p-2 rounded-xl bg-[#6065E3] text-white font-semibold hidden md:block"
+          className="p-2 rounded-xl text-white font-semibold hidden md:block
+                    bg-gradient-to-r from-[#6065E3] to-[#A7A9F2]
+                    hover:opacity-90 transition duration-300"
         >
           {t("log-in")}
         </Link>

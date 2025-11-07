@@ -42,7 +42,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={`${montserrat.variable} antialiased`}>
+      <body className={`${montserrat.variable} antialiased pt-[74px]`}>
         <NextIntlClientProvider locale={locale} messages={plainMessages}>
           <ThemeProviderWrapper>{children}</ThemeProviderWrapper>
         </NextIntlClientProvider>
