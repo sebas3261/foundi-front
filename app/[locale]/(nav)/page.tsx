@@ -2,7 +2,6 @@
 import { Icon } from "@iconify/react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import React from "react";
 
 export default function Page() {
   const t = useTranslations("home");
@@ -19,7 +18,6 @@ export default function Page() {
           <p className="text-[13px] md:text-[15px]">{t("best")}</p>
         </div>
 
-        {/* ✨ Título animado */}
         <motion.div
           className="mt-5 md:mt-10"
           initial={{ opacity: 0, y: 30 }}
@@ -27,7 +25,7 @@ export default function Page() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h2 className="text-[40px] md:text-6xl lg:text-8xl font-bold text-center leading-tight">
+          <h2 className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center leading-tight">
             <span
               className="
                 bg-gradient-to-b from-[#6065E3] via-[#A7A9F2] to-[#6065E3]
