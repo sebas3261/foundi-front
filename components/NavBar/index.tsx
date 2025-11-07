@@ -9,11 +9,13 @@ import { Icon } from "@iconify/react";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
 import LanguageDropdown from "../LanguageDropdown.tsx";
+import { useState } from "react";
 
 export default function NavBar() {
   const t = useTranslations("navbar");
   const { theme, setTheme, systemTheme } = useTheme();
   const { lang } = useParams();
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const currentTheme = theme === "system" ? systemTheme : theme;
 
@@ -108,11 +110,75 @@ export default function NavBar() {
         </button>
         <Link
           href={"/login"}
-          className="p-2 rounded-xl bg-[#6065E3] text-white font-semibold"
+          className="p-2 rounded-xl bg-[#6065E3] text-white font-semibold hidden md:block"
         >
           {t("log-in")}
         </Link>
+
+        <button
+          className="p-2 rounded-xl hover:bg-[#A7A9F2] hover:text-white hover:dark:bg-[#333777] text-gray-800 dark:text-gray-200 transition duration-300 cursor-pointer md:hidden"
+          aria-label="Open menu"
+          aria-expanded={mobileOpen}
+          onClick={() => setMobileOpen((v) => !v)}
+        >
+          <Icon
+            icon={mobileOpen ? "lucide:x" : "material-symbols:menu"}
+            className="w-5 h-5"
+          />
+        </button>
       </div>
+
+      {mobileOpen && (
+        <nav className="md:hidden fixed top-[74px] left-0 right-0 z-40 bg-white/95 dark:bg-[#1F1F1F]/95 border-t border-black/5 shadow-lg">
+          <ul className="p-3 space-y-1 text-sm">
+            <li>
+              <Link
+                href="/"
+                className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-[#2A2A2A]"
+                onClick={() => setMobileOpen(false)}
+              >
+                {t("home")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/our-team"
+                className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-[#2A2A2A]"
+                onClick={() => setMobileOpen(false)}
+              >
+                {t("our-team")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-[#2A2A2A]"
+                onClick={() => setMobileOpen(false)}
+              >
+                {t("contact")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/premium"
+                className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-[#2A2A2A]"
+                onClick={() => setMobileOpen(false)}
+              >
+                {t("premium")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/login"
+                className="block px-3 py-2 rounded-lg bg-[#6065E3] text-white font-semibold"
+                onClick={() => setMobileOpen(false)}
+              >
+                {t("log-in")}
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      )}
     </header>
   );
 }
