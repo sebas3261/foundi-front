@@ -1,9 +1,11 @@
-import {defineRouting} from 'next-intl/routing';
+// /src/i18n/routing.ts
+import { defineRouting } from "next-intl/routing";
+import { createNavigation } from "next-intl/navigation";
 
 export const routing = defineRouting({
-  // A list of all locales that are supported
-  locales: ['en', 'es', 'fr', 'pt'],
- 
-  // Used when no locale matches
-  defaultLocale: 'en'
+  locales: ["en", "es", "fr", "pt"],
+  defaultLocale: "en",
 });
+
+// OJO: aquí NO existe useLocale
+export const { Link, useRouter, usePathname } = createNavigation(routing);

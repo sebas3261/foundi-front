@@ -1,31 +1,63 @@
 "use client";
 import { Icon } from "@iconify/react";
-import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { useTranslations, useLocale } from "next-intl";
+import { motion, type Variants } from "framer-motion";
+import React from "react";
+
+// 🔮 Variantes para el efecto escalonado (tipadas)
+const container: Variants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.25,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const item: Variants = {
+  hidden: { opacity: 0, y: 30, scale: 0.95 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      type: "spring" as const, // ✅ fuerza el literal correcto
+      stiffness: 220,
+      damping: 15,
+      mass: 0.8,
+    },
+  },
+};
 
 export default function Page() {
   const t = useTranslations("home");
+  const locale = useLocale();
 
   return (
-    <main>
-      <section className="flex justify-center items-center flex-col">
-        {/* 🟣 Badge superior */}
-        <div className="flex flex-row gap-2 items-center font-semibold bg-[#E9EAF8] text-[#6065E3] py-1 px-2 md:px-4 rounded-md border border-[#D5D5F5] mt-10 md:mt-15 dark:bg-[#1B1B29] dark:border-[#28294D] cursor-default hover:bg-[#D9DAF7] dark:hover:bg-[#21223C]">
+    <main className="p-2">
+      <motion.section
+        key={locale}
+        className="flex justify-center items-center flex-col"
+        variants={container}
+        initial="hidden"
+        animate="show"
+      >
+        {/* ⭐ Badge */}
+        <motion.div
+          variants={item}
+          className="flex flex-row gap-2 items-center font-semibold bg-[#E9EAF8] text-[#6065E3] py-1 px-2 md:px-4 rounded-md border border-[#D5D5F5] mt-10 md:mt-15 dark:bg-[#1B1B29] dark:border-[#28294D] cursor-default hover:bg-[#D9DAF7] dark:hover:bg-[#21223C]"
+        >
           <Icon
             icon="hugeicons:stars"
             className="w-[13px] h-[13px] md:w-[15px] md:h-[15px]"
           />
           <p className="text-[13px] md:text-[15px]">{t("best")}</p>
-        </div>
+        </motion.div>
 
-        <motion.div
-          className="mt-5 md:mt-10"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center leading-tight">
+        {/* ✨ Título */}
+        <motion.div variants={item} className="mt-5 md:mt-10">
+          <h2 className="text-[40px] md:text-6xl lg:text-[80px] font-bold text-center leading-tight">
             <span
               className="
                 bg-gradient-to-b from-[#6065E3] via-[#A7A9F2] to-[#6065E3]
@@ -40,7 +72,15 @@ export default function Page() {
             </span>
           </h2>
         </motion.div>
-      </section>
+
+        {/* 📱 Subtítulo */}
+        <motion.div variants={item} className="mt-4 text-center font-semibold md:text-lg lg:text-2xl">
+          <p className="text-[#707070] dark:text-[#A0A0A0]">
+            {t("subtitle1")}
+          </p>
+          <p>{t("subtitle2")}</p>
+        </motion.div>
+      </motion.section>
     </main>
   );
 }
