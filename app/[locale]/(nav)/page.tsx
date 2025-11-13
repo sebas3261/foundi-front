@@ -74,12 +74,53 @@ export default function Page() {
         </motion.div>
 
         {/* 📱 Subtítulo */}
-        <motion.div variants={item} className="mt-4 text-center font-semibold md:text-lg lg:text-2xl">
-          <p className="text-[#707070] dark:text-[#A0A0A0]">
-            {t("subtitle1")}
-          </p>
+        <motion.div
+          variants={item}
+          className="mt-4 text-center font-semibold md:text-lg lg:text-2xl"
+        >
+          <p className="text-[#707070] dark:text-[#A0A0A0]">{t("subtitle1")}</p>
           <p>{t("subtitle2")}</p>
         </motion.div>
+
+        <motion.div
+          variants={item}
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 md:mt-10 justify-center items-center w-full max-w-md mx-auto"
+        >
+          {/* 🎯 Botón principal */}
+          <button className="flex-1 px-6 py-2.5 rounded-xl text-white font-semibold bg-gradient-to-r from-[#6065E3] to-[#A7A9F2] hover:opacity-90 hover:scale-[1.05] transition-all duration-300 dark:bg-none dark:bg-[#6065E3] text-[clamp(0.9rem,1vw,1rem)] flex items-center justify-center text-center whitespace-nowrap min-w-[160px]">
+            {t("start-button")}
+          </button>
+
+          {/* 💎 Botón secundario */}
+          <button
+            className="
+      flex-1 px-6 py-2.5 rounded-xl font-semibold
+      border-2 border-[#6065E3]
+      text-[#6065E3] dark:text-[#A7A9F2]
+      hover:bg-[#E9EAF8] dark:hover:bg-[#1B1B29]
+      hover:scale-[1.05]
+      transition-all duration-300
+      text-[clamp(0.9rem,1vw,1rem)]
+      flex items-center justify-center text-center
+      whitespace-nowrap
+      min-w-[160px]
+    "
+          >
+            {t("premium-button")}
+          </button>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.9, duration: 0.5, ease: "easeOut" }}
+          className="mt-7 flex flex-row flex-wrap items-center justify-center gap-2 md:gap-5 text-[#707070] dark:text-[#A0A0A0] px-5 font-semibold"
+        >
+          <p>+10,000 usuarios activos</p>
+          <p>Encriptación bancaria</p>
+          <p>Ahorra hasta 30% más</p>
+        </motion.div>
+        
       </motion.section>
     </main>
   );

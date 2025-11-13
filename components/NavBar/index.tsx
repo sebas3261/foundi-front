@@ -80,7 +80,7 @@ export default function NavBar() {
 
         <Link
           href="/login"
-          className="p-2 rounded-xl text-white font-semibold hidden md:block bg-gradient-to-r from-[#6065E3] to-[#A7A9F2] hover:opacity-90 transition duration-300"
+          className="p-2 rounded-xl text-white font-semibold hidden md:block bg-gradient-to-r from-[#6065E3] to-[#A7A9F2] hover:opacity-90 transition duration-300 dark:bg-none dark:bg-[#6065E3]"
         >
           {t("log-in")}
         </Link>
