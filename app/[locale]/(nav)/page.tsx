@@ -45,7 +45,7 @@ export default function Page() {
           variants={fade}
           className="flex flex-row gap-2 items-center font-semibold 
           bg-[#E9EAF8] text-[#6065E3] py-1 px-3 rounded-md border border-[#D5D5F5]
-          dark:bg-[#1B1B29] dark:border-[#28294D] mt-10"
+          dark:bg-[#1B1B29] dark:border-[#28294D] mt-10 mb-4"
         >
           <Icon icon="hugeicons:stars" className="w-[15px] h-[15px]" />
           <p className="text-[15px]">{t("best")}</p>
