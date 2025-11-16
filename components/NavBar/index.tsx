@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Icon } from "@iconify/react";
 import LanguageDropdown from "../LanguageDropdown"; // <- sin .tsx
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function NavBar() {
   const t = useTranslations("navbar");
@@ -53,13 +54,22 @@ export default function NavBar() {
         <Link href="/" className="hover:text-[#6065E3] transition duration-300">
           {t("home")}
         </Link>
-        <Link href="/our-team" className="hover:text-[#6065E3] transition duration-300">
+        <Link
+          href="/our-team"
+          className="hover:text-[#6065E3] transition duration-300"
+        >
           {t("our-team")}
         </Link>
-        <Link href="/contact" className="hover:text-[#6065E3] transition duration-300">
+        <Link
+          href="/contact"
+          className="hover:text-[#6065E3] transition duration-300"
+        >
           {t("contact")}
         </Link>
-        <Link href="/premium" className="hover:text-[#6065E3] transition duration-300">
+        <Link
+          href="/premium"
+          className="hover:text-[#6065E3] transition duration-300"
+        >
           {t("premium")}
         </Link>
       </nav>
@@ -92,62 +102,78 @@ export default function NavBar() {
           aria-expanded={mobileOpen}
           onClick={() => setMobileOpen((v) => !v)}
         >
-          <Icon icon={mobileOpen ? "lucide:x" : "material-symbols:menu"} className="w-5 h-5" />
+          <Icon
+            icon={mobileOpen ? "lucide:x" : "material-symbols:menu"}
+            className="w-5 h-5"
+          />
         </button>
       </div>
 
       {/* Menú móvil (usa Link localizado para preservar locale) */}
-      {mobileOpen && (
-        <nav className="md:hidden fixed top-[74px] left-0 right-0 z-40 bg-white/95 dark:bg-[#1F1F1F]/95 border-t border-black/5 shadow-lg">
-          <ul className="p-3 space-y-1 text-sm">
-            <li>
-              <Link
-                href="/"
-                className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-[#2A2A2A]"
-                onClick={() => setMobileOpen(false)}
-              >
-                {t("home")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/our-team"
-                className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-[#2A2A2A]"
-                onClick={() => setMobileOpen(false)}
-              >
-                {t("our-team")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-[#2A2A2A]"
-                onClick={() => setMobileOpen(false)}
-              >
-                {t("contact")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/premium"
-                className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-[#2A2A2A]"
-                onClick={() => setMobileOpen(false)}
-              >
-                {t("premium")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/login"
-                className="block px-3 py-2 rounded-lg bg-[#6065E3] text-white font-semibold"
-                onClick={() => setMobileOpen(false)}
-              >
-                {t("log-in")}
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      )}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.nav
+            key="mobileMenu"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.28, ease: "easeOut" }}
+            className="md:hidden fixed top-[74px] left-0 right-0 z-40 bg-white/95 dark:bg-[#1F1F1F]/95 border-t border-black/5 shadow-lg"
+          >
+            <ul className="p-3 space-y-1 text-sm">
+              <li>
+                <Link
+                  href="/"
+                  className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-[#2A2A2A]"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {t("home")}
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="/our-team"
+                  className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-[#2A2A2A]"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {t("our-team")}
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="/contact"
+                  className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-[#2A2A2A]"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {t("contact")}
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="/premium"
+                  className="block px-3 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-[#2A2A2A]"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {t("premium")}
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="/login"
+                  className="block px-3 py-2 rounded-lg bg-[#6065E3] text-white font-semibold"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {t("log-in")}
+                </Link>
+              </li>
+            </ul>
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
