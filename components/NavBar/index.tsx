@@ -43,9 +43,9 @@ export default function NavBar() {
           />
         </span>
 
-        <h1 className="font-semibold text-[#6065E3] text-xl dark:text-white dark:group-hover:text-[#6065E3] transition-colors duration-300 ease-out">
+        <h2 className="font-semibold text-[#6065E3] text-xl dark:text-white dark:group-hover:text-[#6065E3] transition-colors duration-300 ease-out">
           Foundi
-        </h1>
+        </h2>
       </Link>
 
       {/* Links desktop (preservan locale) */}

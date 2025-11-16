@@ -1,34 +1,33 @@
 {
   "seo": {
     "title": "Foundi – Finances personnelles simples et sécurisées",
-    "description": "Foundi est une plateforme moderne de finances personnelles qui vous aide à mieux comprendre et organiser votre argent. Suivez vos dépenses, développez de bonnes habitudes financières et gardez le contrôle de votre confidentialité. Bientôt disponible pour tous.",
+    "description": "Foundi est une plateforme moderne de finances personnelles qui vous aide à organiser, comprendre et améliorer votre relation avec l'argent. Suivez vos dépenses, développez de meilleures habitudes financières et gardez le contrôle total de votre vie privée.",
     "keywords": [
       "finances personnelles",
       "plateforme financière",
-      "gestion d'argent",
       "suivi des dépenses",
-      "budget personnel",
+      "gestion de l'argent",
+      "planification budgétaire",
       "éducation financière",
+      "budget sécurisé",
+      "contrôle financier",
       "foundi",
       "foundifinance",
       "finances numériques",
-      "épargne intelligente",
-      "contrôle financier",
-      "planification budgétaire",
+      "gestion de l'épargne",
+      "analyse des dépenses",
       "santé financière",
       "liberté financière",
-      "gestion du budget",
-      "analyse des dépenses"
+      "planification financière",
+      "habitudes financières"
     ],
     "siteName": "Foundi",
     "ogTitle": "Foundi – Une nouvelle façon de comprendre vos finances",
     "ogDescription": "Découvrez Foundi, la plateforme web qui vous aide à garder le contrôle de vos finances personnelles de manière simple, claire et sécurisée.",
     "twitterTitle": "Foundi – Finances personnelles simples et sécurisées",
-    "twitterDescription": "Organisez votre argent avec Foundi. Simple, privé et conçu pour des personnes réelles. Bientôt disponible.",
-    "canonical": "https://www.foundifinance.com/fr",
+    "twitterDescription": "Organisez votre argent avec Foundi. Simple, privé et conçu pour les gens réels.",
     "author": "Équipe Foundi",
     "publisher": "Foundi Finance",
-    "copyright": "© 2025 Foundi. Tous droits réservés.",
-    "locale": "fr_FR"
+    "copyright": "© 2025"
   }
 }

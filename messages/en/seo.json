@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Foundi – Simple and secure personal finance",
-    "description": "Foundi is a modern personal finance platform that helps you organize, understand, and improve your relationship with money. Track your expenses, create healthy financial habits, and keep full control of your privacy. Coming soon for everyone.",
+    "description": "Foundi is a modern personal finance platform that helps you organize, understand, and improve your relationship with money. Track expenses, build healthier financial habits, and stay fully in control of your privacy.",
     "keywords": [
       "personal finance",
       "financial platform",
@@ -25,11 +25,9 @@
     "ogTitle": "Foundi – A new way to understand your finances",
     "ogDescription": "Discover Foundi, the web platform that helps you stay in control of your personal finances in a simple, clear, and secure way.",
     "twitterTitle": "Foundi – Simple and secure personal finance",
-    "twitterDescription": "Organize your money with Foundi. Simple, private, and designed for real people. Coming soon.",
-    "canonical": "https://www.foundifinance.com/en",
+    "twitterDescription": "Organize your money with Foundi. Simple, private, and designed for real people.",
     "author": "Foundi Team",
     "publisher": "Foundi Finance",
-    "copyright": "© 2025 Foundi. All rights reserved.",
-    "locale": "en_US"
+    "copyright": "© 2025"
   }
 }

@@ -1,11 +1,109 @@
 {
   "home": {
-    "best": "La meilleure application financière de 2025",
-    "title1": "Prends le contrôle",
-    "title2": "de ton argent",
-    "subtitle1": "Gérez vos revenus, dépenses et économies dans une seule application.",
-    "subtitle2": "Simple, sûr et puissant.",
-    "start-button": "Commence gratuitement",
-    "premium-button": "Voir Premium"
+    "best": "Gérez votre argent simplement",
+
+    "title1": "Prenez le contrôle",
+    "title2": "de votre argent",
+
+    "subtitle1": "Gérez revenus, dépenses et économies dans une seule application.",
+    "subtitle2": "Simple, sécurisé et puissant.",
+
+    "start-button": "Commencer gratuitement",
+    "premium-button": "Voir Premium",
+
+    "underText1": "Confidentialité d’abord",
+    "underText2": "Données chiffrées",
+    "underText3": "Vous gardez le contrôle",
+
+    "why1Title": "Une vision claire de vos finances",
+    "why1Desc": "Comprenez vos habitudes financières grâce à une interface simple qui vous montre où va votre argent.",
+
+    "why2Title": "Conçu pour la vraie vie",
+    "why2Desc": "Enregistrez vos dépenses en quelques secondes et organisez-les facilement par catégories.",
+
+    "why3Title": "Créé avec la confidentialité au cœur",
+    "why3Desc": "Vos données financières vous appartiennent. Elles ne sont jamais partagées.",
+
+    "experienceTitle": "Comprenez réellement votre argent",
+    "experienceSubtitle": "Balance, revenus, dépenses et catégories — tout dans un tableau clair.",
+
+    "balanceLabel": "Solde",
+    "balanceValue": "1 250 €",
+    "income": "+ 1 800 € revenus",
+    "expenses": "– 550 € dépenses",
+
+    "catDining": "Restaurants",
+    "catDiningAmount": "220 €",
+
+    "catGroceries": "Courses",
+    "catGroceriesAmount": "480 €",
+
+    "catSubscriptions": "Abonnements",
+    "catSubscriptionsAmount": "90 €",
+
+    "catTransport": "Transport",
+    "catTransportAmount": "150 €",
+
+    "howTitle": "Comment fonctionne Foundi",
+    "howSubtitle": "Un processus simple en 3 étapes pour comprendre votre argent.",
+
+    "how1Title": "Ajoutez vos revenus",
+    "how1Desc": "Définissez votre revenu mensuel pour contextualiser vos finances.",
+
+    "how2Title": "Suivez vos dépenses",
+    "how2Desc": "Enregistrez vos dépenses quotidiennes et classez-les instantanément.",
+
+    "how3Title": "Comprenez vos habitudes",
+    "how3Desc": "Voyez où va votre argent et améliorez vos décisions.",
+
+    "trackTitle": "Ce que vous pouvez suivre avec Foundi",
+    "trackSubtitle": "Organisez vos finances avec des catégories simples et flexibles.",
+
+    "trackGroceries": "Courses",
+    "trackSubscriptions": "Abonnements",
+    "trackTransport": "Transport",
+    "trackDining": "Restaurants",
+    "trackSavings": "Économies",
+    "trackIncome": "Revenus",
+    "trackWork": "Travail",
+    "trackHome": "Maison",
+
+    "privacyTitle": "Confidentialité, toujours",
+    "privacySubtitle": "Foundi est conçu avec une approche axée sur la confidentialité. Vos données ne quittent jamais votre appareil.",
+    "privacyBullet1": "✔ Chiffrement local de bout en bout",
+    "privacyBullet2": "✔ Aucun suivi, aucune analytics",
+    "privacyBullet3": "✔ Aucun accès tiers",
+
+    "roadmapTitle": "À venir",
+    "roadmapSubtitle": "Une feuille de route en constante évolution.",
+
+    "roadmap1Label": "Catégorisation automatique",
+    "roadmap1Status": "En cours",
+
+    "roadmap2Label": "Application mobile",
+    "roadmap2Status": "En cours",
+
+    "roadmap3Label": "Analyses intelligentes",
+    "roadmap3Status": "Bientôt disponible",
+
+    "roadmap4Label": "Synchronisation cloud",
+    "roadmap4Status": "Bientôt disponible",
+
+    "roadmap5Label": "Budgets personnalisés",
+    "roadmap5Status": "Prévu",
+
+    "faqTitle": "Questions fréquentes",
+
+    "faq1Q": "Mes données sont-elles en sécurité ?",
+    "faq1A": "Oui. Vos données sont chiffrées et uniquement accessibles par vous.",
+
+    "faq2Q": "Foundi est-il payant ?",
+    "faq2A": "Foundi commence gratuitement. Une version premium est disponible.",
+
+    "faq3Q": "Y aura-t-il une application mobile ?",
+    "faq3A": "Oui. Les versions iOS et Android sont en développement.",
+
+    "faq4Q": "Ai-je besoin d’Internet ?",
+    "faq4A": "Pas pour enregistrer vos dépenses. Certaines fonctions se synchronisent en ligne."
   }
 }

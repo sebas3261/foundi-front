@@ -1,11 +1,110 @@
 {
   "home": {
-    "best": "La mejor app financiera de 2025",
+    "best": "La forma más simple de manejar tu dinero",
+
+
     "title1": "Toma el control",
     "title2": "de tu dinero",
+
     "subtitle1": "Gestiona ingresos, gastos y ahorros en una sola app.",
     "subtitle2": "Simple, seguro y poderoso.",
+
     "start-button": "Comienza gratis",
-    "premium-button": "Ver Premium"
+    "premium-button": "Ver Premium",
+
+    "underText1": "Privacidad primero",
+    "underText2": "Datos cifrados",
+    "underText3": "Tú tienes el control",
+
+    "why1Title": "Una visión clara de tu dinero",
+    "why1Desc": "Entiende tus hábitos financieros con una interfaz sencilla que te muestra exactamente en qué gastas y cómo mejorar.",
+
+    "why2Title": "Diseñado para la vida real",
+    "why2Desc": "Registra tus gastos en segundos, organízalos en categorías y mantén todo bajo control sin complicarte.",
+
+    "why3Title": "Construido con privacidad en mente",
+    "why3Desc": "Tu información financiera es solo tuya. Tus datos nunca se comparten con terceros.",
+
+    "experienceTitle": "Ve cómo se comporta realmente tu dinero",
+    "experienceSubtitle": "Balance, ingresos, gastos y categorías — todo en un panel simple y enfocado.",
+
+    "balanceLabel": "Balance",
+    "balanceValue": "$1.250",
+    "income": "+ $1.800 ingresos",
+    "expenses": "– $550 gastos",
+
+    "catDining": "Comidas",
+    "catDiningAmount": "$220",
+
+    "catGroceries": "Mercado",
+    "catGroceriesAmount": "$480",
+
+    "catSubscriptions": "Suscripciones",
+    "catSubscriptionsAmount": "$90",
+
+    "catTransport": "Transporte",
+    "catTransportAmount": "$150",
+
+    "howTitle": "Cómo funciona Foundi",
+    "howSubtitle": "Un flujo simple de 3 pasos para entender mejor tu dinero.",
+
+    "how1Title": "Agrega tus ingresos",
+    "how1Desc": "Define tu ingreso mensual para darle contexto a tus finanzas.",
+
+    "how2Title": "Registra tus gastos",
+    "how2Desc": "Añade tus gastos diarios y categorizalos fácilmente.",
+
+    "how3Title": "Entiende tus patrones",
+    "how3Desc": "Descubre a dónde va tu dinero y crea mejores hábitos financieros.",
+
+    "trackTitle": "Qué puedes registrar con Foundi",
+    "trackSubtitle": "Organiza tus finanzas con categorías simples y flexibles.",
+
+    "trackGroceries": "Mercado",
+    "trackSubscriptions": "Suscripciones",
+    "trackTransport": "Transporte",
+    "trackDining": "Comidas",
+    "trackSavings": "Ahorros",
+    "trackIncome": "Ingresos",
+    "trackWork": "Trabajo",
+    "trackHome": "Hogar",
+
+    "privacyTitle": "Privacidad, siempre",
+    "privacySubtitle": "Foundi está diseñado con una mentalidad de privacidad absoluta. Tus datos financieros son solo tuyos.",
+    "privacyBullet1": "✔ Cifrado local de extremo a extremo",
+    "privacyBullet2": "✔ Sin rastreadores ni analíticas",
+    "privacyBullet3": "✔ Cero acceso de terceros",
+
+    "roadmapTitle": "Lo que viene",
+    "roadmapSubtitle": "Una hoja de ruta que crece con nuevas funciones.",
+
+    "roadmap1Label": "Categorías automáticas",
+    "roadmap1Status": "En progreso",
+
+    "roadmap2Label": "Aplicación móvil",
+    "roadmap2Status": "En progreso",
+
+    "roadmap3Label": "Insights inteligentes",
+    "roadmap3Status": "Próximamente",
+
+    "roadmap4Label": "Sincronización en la nube",
+    "roadmap4Status": "Próximamente",
+
+    "roadmap5Label": "Presupuestos personalizados",
+    "roadmap5Status": "Planeado",
+
+    "faqTitle": "Preguntas frecuentes",
+
+    "faq1Q": "¿Mis datos están seguros?",
+    "faq1A": "Sí. Tus datos se cifran localmente y solo tú puedes acceder a ellos.",
+
+    "faq2Q": "¿Foundi cuesta algo?",
+    "faq2A": "Foundi comienza gratis. Hay una versión premium opcional.",
+
+    "faq3Q": "¿Habrá una app móvil?",
+    "faq3A": "Sí. La versión para iOS y Android ya está en desarrollo.",
+
+    "faq4Q": "¿Necesito internet?",
+    "faq4A": "No para registrar gastos. Algunas funciones se sincronizan cuando estás en línea."
   }
 }

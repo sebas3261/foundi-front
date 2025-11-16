@@ -1,11 +1,109 @@
 {
   "home": {
-    "best": "O melhor aplicativo financeiro de 2025",
+    "best": "Gerencie seu dinheiro com facilidade",
+
     "title1": "Assuma o controle",
     "title2": "do seu dinheiro",
-    "subtitle1": "Gerencie receitas, despesas e economias em um só aplicativo.",
+
+    "subtitle1": "Gerencie receitas, despesas e economia em um só app.",
     "subtitle2": "Simples, seguro e poderoso.",
-    "start-button": "Comece grátis",
-    "premium-button": "Ver Premium"
+
+    "start-button": "Começar grátis",
+    "premium-button": "Ver Premium",
+
+    "underText1": "Privacidade em primeiro lugar",
+    "underText2": "Dados criptografados",
+    "underText3": "Você no controle",
+
+    "why1Title": "Uma visão clara das suas finanças",
+    "why1Desc": "Entenda seus hábitos financeiros com uma interface simples que mostra onde você gasta e como melhorar.",
+
+    "why2Title": "Feito para o dia a dia",
+    "why2Desc": "Registre gastos rapidamente, categorize com facilidade e mantenha tudo organizado.",
+
+    "why3Title": "Construído com foco em privacidade",
+    "why3Desc": "Suas informações financeiras pertencem apenas a você. Nunca são compartilhadas.",
+
+    "experienceTitle": "Veja como seu dinheiro realmente se comporta",
+    "experienceSubtitle": "Saldo, receitas, despesas e categorias — tudo em um painel simples e intuitivo.",
+
+    "balanceLabel": "Saldo",
+    "balanceValue": "R$ 1.250",
+    "income": "+ R$ 1.800 de receitas",
+    "expenses": "– R$ 550 de despesas",
+
+    "catDining": "Restaurantes",
+    "catDiningAmount": "R$ 220",
+
+    "catGroceries": "Mercado",
+    "catGroceriesAmount": "R$ 480",
+
+    "catSubscriptions": "Assinaturas",
+    "catSubscriptionsAmount": "R$ 90",
+
+    "catTransport": "Transporte",
+    "catTransportAmount": "R$ 150",
+
+    "howTitle": "Como o Foundi funciona",
+    "howSubtitle": "Um fluxo simples em 3 etapas para entender suas finanças.",
+
+    "how1Title": "Adicione sua receita",
+    "how1Desc": "Defina sua receita mensal para contextualizar suas finanças.",
+
+    "how2Title": "Acompanhe seus gastos",
+    "how2Desc": "Registre suas despesas diárias e categorize cada uma instantaneamente.",
+
+    "how3Title": "Entenda seus padrões",
+    "how3Desc": "Veja para onde seu dinheiro vai e tome melhores decisões.",
+
+    "trackTitle": "O que você pode acompanhar no Foundi",
+    "trackSubtitle": "Organize suas finanças com categorias simples e flexíveis.",
+
+    "trackGroceries": "Mercado",
+    "trackSubscriptions": "Assinaturas",
+    "trackTransport": "Transporte",
+    "trackDining": "Restaurantes",
+    "trackSavings": "Economias",
+    "trackIncome": "Receitas",
+    "trackWork": "Trabalho",
+    "trackHome": "Casa",
+
+    "privacyTitle": "Privacidade sempre",
+    "privacySubtitle": "O Foundi foi desenvolvido com foco total em privacidade. Seus dados financeiros pertencem somente a você.",
+    "privacyBullet1": "✔ Criptografia local de ponta a ponta",
+    "privacyBullet2": "✔ Sem rastreamento ou analytics",
+    "privacyBullet3": "✔ Zero acesso de terceiros",
+
+    "roadmapTitle": "O que vem por aí",
+    "roadmapSubtitle": "Um roadmap em constante evolução com novas funções.",
+
+    "roadmap1Label": "Categorias automáticas",
+    "roadmap1Status": "Em andamento",
+
+    "roadmap2Label": "Aplicativo móvel",
+    "roadmap2Status": "Em andamento",
+
+    "roadmap3Label": "Insights inteligentes",
+    "roadmap3Status": "Em breve",
+
+    "roadmap4Label": "Sincronização na nuvem",
+    "roadmap4Status": "Em breve",
+
+    "roadmap5Label": "Orçamentos personalizados",
+    "roadmap5Status": "Planejado",
+
+    "faqTitle": "Perguntas frequentes",
+
+    "faq1Q": "Meus dados estão seguros?",
+    "faq1A": "Sim. Seus dados são criptografados e acessíveis apenas por você.",
+
+    "faq2Q": "O Foundi é pago?",
+    "faq2A": "O Foundi começa grátis. A versão premium é opcional.",
+
+    "faq3Q": "Haverá um app móvel?",
+    "faq3A": "Sim. As versões para iOS e Android já estão em desenvolvimento.",
+
+    "faq4Q": "Preciso de internet?",
+    "faq4A": "Não para registrar gastos. Algumas funções sincronizam quando você está online."
   }
 }

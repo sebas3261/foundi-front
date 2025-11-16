@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Foundi – Finanças pessoais simples e seguras",
-    "description": "A Foundi é uma plataforma moderna de finanças pessoais que ajuda você a organizar, entender e melhorar sua relação com o dinheiro. Acompanhe seus gastos, crie hábitos financeiros saudáveis e mantenha total controle da sua privacidade. Em breve para todos.",
+    "description": "Foundi é uma plataforma moderna de finanças pessoais que ajuda você a organizar, entender e melhorar sua relação com o dinheiro. Acompanhe seus gastos, crie hábitos financeiros mais saudáveis e mantenha controle total da sua privacidade.",
     "keywords": [
       "finanças pessoais",
       "plataforma financeira",
@@ -14,22 +14,20 @@
       "foundi",
       "foundifinance",
       "finanças digitais",
-      "gestão de poupança",
-      "análise de despesas",
+      "gestão de economia",
+      "análise de gastos",
       "saúde financeira",
       "liberdade financeira",
-      "planejamento de finanças",
+      "planejamento de gastos",
       "hábitos financeiros"
     ],
     "siteName": "Foundi",
     "ogTitle": "Foundi – Uma nova maneira de entender suas finanças",
-    "ogDescription": "Descubra a Foundi, a plataforma web que ajuda você a manter o controle das suas finanças pessoais de forma simples, clara e segura.",
+    "ogDescription": "Descubra o Foundi, a plataforma web que ajuda você a manter o controle das suas finanças pessoais de forma simples, clara e segura.",
     "twitterTitle": "Foundi – Finanças pessoais simples e seguras",
-    "twitterDescription": "Organize seu dinheiro com a Foundi. Simples, privada e feita para pessoas reais. Em breve.",
-    "canonical": "https://www.foundifinance.com/pt",
+    "twitterDescription": "Organize seu dinheiro com o Foundi. Simples, privado e feito para pessoas reais.",
     "author": "Equipe Foundi",
     "publisher": "Foundi Finance",
-    "copyright": "© 2025 Foundi. Todos os direitos reservados.",
-    "locale": "pt_BR"
+    "copyright": "© 2025"
   }
 }

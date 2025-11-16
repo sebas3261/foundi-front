@@ -1,11 +1,109 @@
 {
   "home": {
-    "best": "The best financial app of 2025",
+    "best": "The simplest way to track your money",
+
     "title1": "Take control",
     "title2": "of your money",
-    "subtitle1": "Manage income, expenses, and savings in a single app.",
+
+    "subtitle1": "Manage income, expenses, and savings in one app.",
     "subtitle2": "Simple, secure, and powerful.",
+
     "start-button": "Start for free",
-    "premium-button": "See Premium"
+    "premium-button": "See Premium",
+
+    "underText1": "Privacy first",
+    "underText2": "Encrypted data",
+    "underText3": "You’re in control",
+
+    "why1Title": "A clear view of your money",
+    "why1Desc": "Understand your financial habits with a simple interface that shows you where you spend and how you can improve.",
+
+    "why2Title": "Made for real life",
+    "why2Desc": "Log expenses in seconds, categorize them easily, and stay organized without effort.",
+
+    "why3Title": "Built with privacy in mind",
+    "why3Desc": "Your financial information belongs only to you. Your data is never shared.",
+
+    "experienceTitle": "See how your money really behaves",
+    "experienceSubtitle": "Balance, income, expenses, and categories—all in a clean and focused dashboard.",
+
+    "balanceLabel": "Balance",
+    "balanceValue": "$1,250",
+    "income": "+ $1,800 income",
+    "expenses": "– $550 expenses",
+
+    "catDining": "Dining",
+    "catDiningAmount": "$220",
+
+    "catGroceries": "Groceries",
+    "catGroceriesAmount": "$480",
+
+    "catSubscriptions": "Subscriptions",
+    "catSubscriptionsAmount": "$90",
+
+    "catTransport": "Transport",
+    "catTransportAmount": "$150",
+
+    "howTitle": "How Foundi works",
+    "howSubtitle": "A simple 3-step flow to understand your finances.",
+
+    "how1Title": "Add your income",
+    "how1Desc": "Set your monthly income to provide context to your finances.",
+
+    "how2Title": "Track expenses",
+    "how2Desc": "Log your daily spending and categorize each entry instantly.",
+
+    "how3Title": "Understand patterns",
+    "how3Desc": "See where your money goes and make better decisions.",
+
+    "trackTitle": "What you can track in Foundi",
+    "trackSubtitle": "Organize your finances with simple and flexible categories.",
+
+    "trackGroceries": "Groceries",
+    "trackSubscriptions": "Subscriptions",
+    "trackTransport": "Transport",
+    "trackDining": "Dining",
+    "trackSavings": "Savings",
+    "trackIncome": "Income",
+    "trackWork": "Work",
+    "trackHome": "Home",
+
+    "privacyTitle": "Privacy, always",
+    "privacySubtitle": "Foundi is built with a strict privacy-first mindset. Your financial data belongs only to you.",
+    "privacyBullet1": "✔ End-to-end local encryption",
+    "privacyBullet2": "✔ No tracking or analytics",
+    "privacyBullet3": "✔ Zero third-party access",
+
+    "roadmapTitle": "What’s coming next",
+    "roadmapSubtitle": "A growing roadmap with new features coming soon.",
+
+    "roadmap1Label": "Automatic categorization",
+    "roadmap1Status": "In progress",
+
+    "roadmap2Label": "Mobile app",
+    "roadmap2Status": "In progress",
+
+    "roadmap3Label": "Smart insights",
+    "roadmap3Status": "Coming soon",
+
+    "roadmap4Label": "Cloud sync",
+    "roadmap4Status": "Coming soon",
+
+    "roadmap5Label": "Custom budgets",
+    "roadmap5Status": "Planned",
+
+    "faqTitle": "Frequently asked questions",
+
+    "faq1Q": "Is my data secure?",
+    "faq1A": "Yes. Your data is encrypted and only accessible by you.",
+
+    "faq2Q": "Does Foundi cost anything?",
+    "faq2A": "Foundi starts free. A premium version is optional.",
+
+    "faq3Q": "Will there be a mobile app?",
+    "faq3A": "Yes. An iOS and Android version is currently in development.",
+
+    "faq4Q": "Do I need internet?",
+    "faq4A": "Not for adding expenses. Some features sync when you’re online."
   }
 }
