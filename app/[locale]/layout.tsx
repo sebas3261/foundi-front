@@ -41,8 +41,19 @@ export default async function RootLayout({
     : messages;
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body className={`${montserrat.variable} antialiased pt-[74px]`}>
+    <html
+      lang={locale}
+      suppressHydrationWarning
+      className="bg-white dark:bg-[#0F0F0F]" // ⭐ FIX SAFARI
+    >
+      <body
+        className={`
+        ${montserrat.variable} 
+        antialiased 
+        pt-[74px] 
+        bg-white dark:bg-[#0F0F0F]   // ⭐ FIX SAFARI
+      `}
+      >
         <NextIntlClientProvider locale={locale} messages={plainMessages}>
           <ThemeProviderWrapper>{children}</ThemeProviderWrapper>
         </NextIntlClientProvider>
