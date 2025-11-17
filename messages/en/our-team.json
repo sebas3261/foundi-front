@@ -1,0 +1,85 @@
+{
+  "our-team": {
+    "heroTitle": "Your money, made clear.",
+    "heroSubtitle": "We created Foundi to make managing your finances simple, secure, and stress-free.",
+
+    "editorial": "Foundi was born with a clear mission: to make your finances simple, understandable, and truly yours.",
+
+    "who1Title": "Why we exist",
+    "who1Short": "Finances shouldn't be complicated. Anyone should be able to understand their money without stress.",
+    "who1Text": "We built Foundi because we believe financial clarity is a right, not a privilege.",
+
+    "who2Title": "What we do",
+    "who2Short": "We design simple, private, and easy tools to help you make better decisions.",
+    "who2Text": "Our product focuses on simplicity, privacy, and giving full control to the user.",
+
+    "who3Title": "How we think",
+    "who3Short": "Technology should help you, not overwhelm you. Every detail is crafted with intention.",
+    "who3Text": "We believe in quiet, honest, and useful products that respect the user.",
+
+    "valuesTitle": "Our values",
+
+    "value1Title": "Simplicity",
+    "value1Text": "Everything should be understandable in seconds. No noise. No friction.",
+
+    "value2Title": "Privacy",
+    "value2Text": "Your data is yours. We never sell it or share it. Period.",
+
+    "value3Title": "Security",
+    "value3Text": "We use modern encryption across the entire system, from device to cloud.",
+
+    "value4Title": "Transparency",
+    "value4Text": "No dark patterns. No hidden tricks. Everything is clear from the start.",
+
+    "historyTitle": "Our story",
+
+    "h1Title": "2023 — The idea",
+    "h1Text": "Foundi is born as a simple and private alternative to traditional finance apps.",
+
+    "h2Title": "2024 — First prototype",
+    "h2Text": "We built the first version focused on clarity and user experience.",
+
+    "h3Title": "2025 — Beta launch",
+    "h3Text": "Thousands of real users helped us refine every detail.",
+
+    "h4Title": "What's next",
+    "h4Text": "Sync, AI features, new languages, and more — all without losing Foundi’s simplicity.",
+
+    "teamTitle": "Our team",
+    "teamFounderTitle": "Sebastián Sánchez — Founder & Full-Stack Developer",
+    "teamFounderText": "Designs, builds, and brings Foundi to life, from UI to system architecture and security.",
+
+    "techTitle": "Technology & security",
+
+    "t1Title": "Modern encryption",
+    "t1Text": "Your information is transmitted and stored securely using current standards.",
+
+    "t2Title": "Lightweight architecture",
+    "t2Text": "Foundi is optimized to be fast, efficient, and stable on any device.",
+
+    "t3Title": "Local-first mode",
+    "t3Text": "Your data is saved locally first. You choose what to sync.",
+
+    "t4Title": "Full control",
+    "t4Text": "You decide what to keep, delete, or sync. Foundi never makes decisions for you.",
+
+    "s1Number": "+3,000",
+    "s1Label": "Users who trust Foundi",
+
+    "s2Number": "90%",
+    "s2Label": "Understand their finances better",
+
+    "s4Number": "100%",
+    "s4Label": "User control",
+
+    "manifestoTitle": "Our manifesto",
+    "m1": "Privacy is not optional.",
+    "m2": "Simplicity is power.",
+    "m3": "Your data should be yours.",
+    "m4": "Finances shouldn’t feel intimidating.",
+
+    "ctaTitle": "This is just the beginning",
+    "ctaText": "We’re building Foundi every day to give you the best financial experience possible.",
+    "ctaButton": "Start for free"
+  }
+}

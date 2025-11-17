@@ -15,12 +15,14 @@ export default getRequestConfig(async ({ requestLocale }) => {
   }
 
   // Cargar varios archivos de traducción
-  const [common, navbar, seo, home, footer] = await Promise.all([
+  const [common, navbar, seo, home, footer, ourteam, contact] = await Promise.all([
     import(`../messages/${locale}/common.json`),
     import(`../messages/${locale}/navbar.json`),
     import(`../messages/${locale}/seo.json`),
     import(`../messages/${locale}/home.json`),
-    import(`../messages/${locale}/footer.json`)
+    import(`../messages/${locale}/footer.json`),
+    import(`../messages/${locale}/our-team.json`),
+    import(`../messages/${locale}/contact.json`)
   ]);
 
   // Combinar en un solo objeto
@@ -31,7 +33,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...navbar.default,
       ...seo.default,
       ...home.default,
-      ...footer.default  
+      ...footer.default,
+      ...ourteam.default,
+      ...contact.default   
     }
   };
 });

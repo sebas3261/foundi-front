@@ -28,6 +28,57 @@
     "twitterDescription": "Organize seu dinheiro com o Foundi. Simples, privado e feito para pessoas reais.",
     "author": "Equipe Foundi",
     "publisher": "Foundi Finance",
-    "copyright": "© 2025"
+    "copyright": "© 2025",
+
+    "ourteamTitle": "Nossa Equipe | Foundi Finance",
+    "ourteamDescription": "Conheça a história, valores e missão por trás da Foundi Finance.",
+    "ourteamOgTitle": "Nossa Equipe",
+    "ourteamOgDescription": "Transparência, segurança e propósito na Foundi Finance.",
+    "ourteamTwitterTitle": "Nossa Equipe | Foundi",
+    "ourteamTwitterDescription": "Descubra a história por trás da Foundi Finance.",
+    "ourteamKeywords": [
+      "foundi",
+      "equipe",
+      "história",
+      "finanças pessoais",
+      "aplicativo financeiro"
+    ],
+    "ourteamSiteName": "Foundi Finance",
+    "ourteamAuthor": "Equipe Foundi",
+    "ourteamPublisher": "Foundi Finance",
+
+    "contactTitle": "Contato | Foundi Finance",
+    "contactDescription": "Entre em contato com a equipe da Foundi para suporte, dúvidas ou parcerias.",
+    "contactOgTitle": "Contato Foundi",
+    "contactOgDescription": "Fale conosco para obter ajuda, suporte ou iniciar uma colaboração.",
+    "contactTwitterTitle": "Contato | Foundi Finance",
+    "contactTwitterDescription": "Conecte-se com a equipe Foundi.",
+    "contactKeywords": [
+      "foundi",
+      "contato",
+      "suporte",
+      "ajuda",
+      "atendimento ao cliente"
+    ],
+    "contactSiteName": "Foundi Finance",
+    "contactAuthor": "Suporte Foundi",
+    "contactPublisher": "Foundi Finance",
+
+    "premiumTitle": "Premium | Foundi Finance",
+    "premiumDescription": "Desbloqueie análises avançadas, sincronização entre dispositivos e ferramentas exclusivas.",
+    "premiumOgTitle": "Foundi Premium",
+    "premiumOgDescription": "Acesse recursos poderosos para gerenciar suas finanças como nunca antes.",
+    "premiumTwitterTitle": "Premium | Foundi Finance",
+    "premiumTwitterDescription": "Eleve sua gestão financeira ao próximo nível.",
+    "premiumKeywords": [
+      "foundi premium",
+      "assinatura",
+      "aplicativo financeiro",
+      "analítica",
+      "controle de gastos"
+    ],
+    "premiumSiteName": "Foundi Finance",
+    "premiumAuthor": "Equipe Foundi",
+    "premiumPublisher": "Foundi Finance"
   }
 }

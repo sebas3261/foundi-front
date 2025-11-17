@@ -1,0 +1,85 @@
+{
+  "our-team": {
+    "heroTitle": "Votre argent, en toute clarté.",
+    "heroSubtitle": "Nous avons créé Foundi pour rendre la gestion de vos finances simple, sécurisée et sans stress.",
+
+    "editorial": "Foundi est né d’une mission simple : rendre vos finances compréhensibles, accessibles et vraiment à vous.",
+
+    "who1Title": "Pourquoi nous existons",
+    "who1Short": "Les finances ne devraient pas être compliquées. Chacun devrait pouvoir comprendre son argent sans stress.",
+    "who1Text": "Nous avons créé Foundi parce que la clarté financière est, selon nous, un droit et non un privilège.",
+
+    "who2Title": "Ce que nous faisons",
+    "who2Short": "Nous concevons des outils simples, privés et faciles à utiliser pour vous aider à prendre de meilleures décisions.",
+    "who2Text": "Notre produit se concentre sur la simplicité, la confidentialité et le contrôle total pour l’utilisateur.",
+
+    "who3Title": "Notre manière de penser",
+    "who3Short": "La technologie doit vous aider, pas vous submerger. Chaque détail est intentionnel.",
+    "who3Text": "Nous croyons en des produits utiles, honnêtes et respectueux des utilisateurs.",
+
+    "valuesTitle": "Nos valeurs",
+
+    "value1Title": "Simplicité",
+    "value1Text": "Tout doit être compréhensible en quelques secondes. Sans bruit. Sans complexité.",
+
+    "value2Title": "Confidentialité",
+    "value2Text": "Vos données vous appartiennent. Jamais vendues, jamais partagées. Point.",
+
+    "value3Title": "Sécurité",
+    "value3Text": "Nous utilisons un chiffrement moderne sur l’ensemble du système, du dispositif au cloud.",
+
+    "value4Title": "Transparence",
+    "value4Text": "Aucun piège. Aucune intention cachée. Tout est clair dès le début.",
+
+    "historyTitle": "Notre histoire",
+
+    "h1Title": "2023 — L’idée",
+    "h1Text": "Naissance de Foundi, une alternative simple et privée aux applications financières traditionnelles.",
+
+    "h2Title": "2024 — Premier prototype",
+    "h2Text": "Nous avons construit une première version centrée sur la clarté et l’expérience utilisateur.",
+
+    "h3Title": "2025 — Lancement bêta",
+    "h3Text": "Des milliers d’utilisateurs réels nous ont aidés à affiner chaque détail.",
+
+    "h4Title": "Et après",
+    "h4Text": "Synchronisation, IA, nouvelles langues et plus — toujours dans l’esprit Foundi : simple et clair.",
+
+    "teamTitle": "Notre équipe",
+    "teamFounderTitle": "Sebastián Sánchez — Fondateur & Développeur Full-Stack",
+    "teamFounderText": "Il conçoit, construit et donne vie à Foundi, de l’interface à l’architecture système et la sécurité.",
+
+    "techTitle": "Technologie & sécurité",
+
+    "t1Title": "Chiffrement moderne",
+    "t1Text": "Vos informations sont transmises et stockées de manière sécurisée selon les standards actuels.",
+
+    "t2Title": "Architecture légère",
+    "t2Text": "Foundi est optimisé pour être rapide, efficace et stable sur n’importe quel appareil.",
+
+    "t3Title": "Mode local-first",
+    "t3Text": "Vos données sont stockées d’abord localement. Vous décidez ce qui doit être synchronisé.",
+
+    "t4Title": "Contrôle total",
+    "t4Text": "Vous choisissez quoi garder, supprimer ou synchroniser. Foundi ne décide jamais pour vous.",
+
+    "s1Number": "+3 000",
+    "s1Label": "Utilisateurs qui font confiance à Foundi",
+
+    "s2Number": "90%",
+    "s2Label": "Comprennent mieux leurs finances",
+
+    "s4Number": "100%",
+    "s4Label": "Contrôle utilisateur",
+
+    "manifestoTitle": "Notre manifeste",
+    "m1": "La confidentialité n’est pas optionnelle.",
+    "m2": "La simplicité est une force.",
+    "m3": "Vos données doivent vous appartenir.",
+    "m4": "Les finances ne devraient pas faire peur.",
+
+    "ctaTitle": "Ce n’est que le début",
+    "ctaText": "Nous améliorons Foundi chaque jour pour vous offrir la meilleure expérience financière possible.",
+    "ctaButton": "Commencer gratuitement"
+  }
+}

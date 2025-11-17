@@ -1,0 +1,17 @@
+{
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos aquí para ayudarte con lo que necesites.",
+    "emailTitle": "Envíanos un correo",
+    "emailText": "Normalmente respondemos en pocas horas.",
+    "supportTitle": "Centro de ayuda",
+    "supportText": "Explora preguntas frecuentes y soluciones.",
+    "ideasTitle": "Enviar sugerencias",
+    "ideasText": "Ayúdanos a mejorar Foundi con tus ideas.",
+    "formTitle": "Envíanos un mensaje",
+    "formName": "Tu nombre",
+    "formEmail": "Tu correo electrónico",
+    "formMessage": "Tu mensaje",
+    "send": "Enviar mensaje"
+  }
+}

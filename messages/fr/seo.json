@@ -28,6 +28,57 @@
     "twitterDescription": "Organisez votre argent avec Foundi. Simple, privé et conçu pour les gens réels.",
     "author": "Équipe Foundi",
     "publisher": "Foundi Finance",
-    "copyright": "© 2025"
+    "copyright": "© 2025",
+
+    "ourteamTitle": "Notre Équipe | Foundi Finance",
+    "ourteamDescription": "Découvrez l’histoire, les valeurs et la mission de Foundi Finance.",
+    "ourteamOgTitle": "Notre Équipe",
+    "ourteamOgDescription": "Transparence, sécurité et mission chez Foundi Finance.",
+    "ourteamTwitterTitle": "Notre Équipe | Foundi",
+    "ourteamTwitterDescription": "Découvrez l’histoire derrière Foundi Finance.",
+    "ourteamKeywords": [
+      "foundi",
+      "équipe",
+      "histoire",
+      "finances personnelles",
+      "application financière"
+    ],
+    "ourteamSiteName": "Foundi Finance",
+    "ourteamAuthor": "Équipe Foundi",
+    "ourteamPublisher": "Foundi Finance",
+
+    "contactTitle": "Contactez-nous | Foundi Finance",
+    "contactDescription": "Contactez l’équipe Foundi pour obtenir du support, poser des questions ou discuter de partenariats.",
+    "contactOgTitle": "Contact Foundi",
+    "contactOgDescription": "Contactez-nous pour obtenir de l’aide, du support ou initier une collaboration.",
+    "contactTwitterTitle": "Contactez-nous | Foundi Finance",
+    "contactTwitterDescription": "Communiquez avec l’équipe Foundi.",
+    "contactKeywords": [
+      "foundi",
+      "contact",
+      "support",
+      "aide",
+      "service client"
+    ],
+    "contactSiteName": "Foundi Finance",
+    "contactAuthor": "Support Foundi",
+    "contactPublisher": "Foundi Finance",
+
+    "premiumTitle": "Premium | Foundi Finance",
+    "premiumDescription": "Débloquez des analyses avancées, la synchronisation multi-appareils et des outils exclusifs.",
+    "premiumOgTitle": "Foundi Premium",
+    "premiumOgDescription": "Accédez à des fonctionnalités puissantes pour gérer vos finances comme jamais auparavant.",
+    "premiumTwitterTitle": "Premium | Foundi Finance",
+    "premiumTwitterDescription": "Améliorez votre gestion financière grâce à Foundi Premium.",
+    "premiumKeywords": [
+      "foundi premium",
+      "abonnement",
+      "application finance",
+      "analytique",
+      "gestion dépenses"
+    ],
+    "premiumSiteName": "Foundi Finance",
+    "premiumAuthor": "Équipe Foundi",
+    "premiumPublisher": "Foundi Finance"
   }
 }

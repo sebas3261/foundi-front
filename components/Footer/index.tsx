@@ -10,7 +10,7 @@ export default function Footer() {
   const locale = useLocale();
 
   return (
-    <footer className="mt-32 border-t border-gray-200 dark:border-[#27283F] bg-white dark:bg-[#1B1B29]">
+    <footer className="border-t border-gray-200 dark:border-[#27283F] bg-white dark:bg-[#1B1B29]">
       <div className="max-w-7xl mx-auto px-6 py-16">
 
         {/* GRID SUPERIOR */}

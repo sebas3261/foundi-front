@@ -1,11 +1,12 @@
 "use client";
 
 import { Icon } from "@iconify/react";
-import { motion } from "framer-motion";
-import type { Variants } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { useTranslations, useLocale } from "next-intl";
 
-// ✔ Fade optimizado (solo opacity + transform) → GPU-friendly
+/* -------------------------------------------------------
+   🔥 GPU-friendly fade — OPACIDAD + TRANSFORM
+-------------------------------------------------------- */
 const fade: Variants = {
   hidden: { opacity: 0, y: 20, willChange: "opacity, transform" },
   show: {
@@ -16,10 +17,19 @@ const fade: Variants = {
   },
 };
 
-// ✔ Para contenedores grandes → NO staggerChildren (Chrome lo odia)
+/* -------------------------------------------------------
+   🔥 CONTENEDORES GRANDES — NO ANIMAN VISUAL,
+      SOLO ACTIVAN CHILDREN (ultra fluido)
+-------------------------------------------------------- */
 const sectionVariants: Variants = {
-  hidden: { opacity: 1 },
-  show: { opacity: 1 },
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.12,
+      delayChildren: 0.05,
+      ease: "easeOut",
+    },
+  },
 };
 
 export default function Page() {
@@ -28,36 +38,40 @@ export default function Page() {
 
   return (
     <main key={locale} className="px-5">
-      {/* ───────────────────────────────────────────── */}
+      {/* ------------------------------------------------ */}
       {/* ⭐ HERO */}
-      {/* ───────────────────────────────────────────── */}
+      {/* ------------------------------------------------ */}
       <motion.section
         key={"hero-" + locale}
         initial="hidden"
         animate="show"
         variants={{
           hidden: {},
-          show: { transition: { staggerChildren: 0.18, delayChildren: 0.1 } },
+          show: {
+            transition: { staggerChildren: 0.18, delayChildren: 0.1 },
+          },
         }}
         className="flex justify-center items-center flex-col max-w-4xl mx-auto mt-20 text-center"
       >
+        {/* Badge */}
         <motion.div
           variants={fade}
           className="flex flex-row gap-2 items-center font-semibold 
-          bg-[#E9EAF8] text-[#6065E3] py-1 px-3 rounded-md border border-[#D5D5F5]
-          dark:bg-[#1B1B29] dark:border-[#28294D] mt-10 mb-4"
+            bg-[#E9EAF8] text-[#6065E3] py-1 px-3 rounded-md border border-[#D5D5F5]
+            dark:bg-[#1B1B29] dark:border-[#28294D] mt-10 mb-4"
         >
           <Icon icon="hugeicons:stars" className="w-[15px] h-[15px]" />
           <p className="text-[15px]">{t("best")}</p>
         </motion.div>
 
+        {/* Title */}
         <motion.h1
           variants={fade}
           className="text-[40px] md:text-6xl lg:text-[80px] font-bold leading-tight text-black dark:text-white"
         >
           <span
             className="bg-gradient-to-b from-[#6065E3] via-[#A7A9F2] to-[#6065E3]
-            bg-clip-text text-transparent dark:bg-none dark:text-[#6065E3]"
+              bg-clip-text text-transparent dark:bg-none dark:text-[#6065E3]"
           >
             {t("title1")}
           </span>
@@ -65,6 +79,7 @@ export default function Page() {
           {t("title2")}
         </motion.h1>
 
+        {/* Subtitle */}
         <motion.div
           variants={fade}
           className="mt-4 text-center font-semibold md:text-lg lg:text-2xl"
@@ -73,30 +88,32 @@ export default function Page() {
           <p>{t("subtitle2")}</p>
         </motion.div>
 
+        {/* CTA Buttons */}
         <motion.div
           variants={fade}
           className="flex flex-col sm:flex-row gap-4 mt-8 justify-center items-center"
         >
           <button
             className="px-8 py-3 rounded-xl text-white font-semibold 
-            bg-gradient-to-r from-[#6065E3] to-[#A7A9F2] hover:opacity-90 transition cursor-pointer dark:bg-none dark:bg-[#6065E3]"
+              bg-gradient-to-r from-[#6065E3] to-[#A7A9F2] hover:opacity-90 transition cursor-pointer dark:bg-[#6065E3]"
           >
             {t("start-button")}
           </button>
 
           <button
             className="px-8 py-3 rounded-xl font-semibold border-2 border-[#6065E3]
-            text-[#6065E3] dark:text-[#A7A9F2] dark:border-[#A7A9F2]
-            hover:bg-[#E9EAF8] dark:hover:bg-[#1B1B29] transition cursor-pointer"
+              text-[#6065E3] dark:text-[#A7A9F2] dark:border-[#A7A9F2]
+              hover:bg-[#E9EAF8] dark:hover:bg-[#1B1B29] transition cursor-pointer"
           >
             {t("premium-button")}
           </button>
         </motion.div>
 
+        {/* Under-text */}
         <motion.div
           variants={fade}
           className="mt-6 flex flex-row flex-wrap items-center justify-center gap-4 
-          text-[#707070] dark:text-[#A0A0A0] font-semibold"
+            text-[#707070] dark:text-[#A0A0A0] font-semibold"
         >
           {[
             ["lucide:shield-check", t("underText1")],
@@ -111,20 +128,21 @@ export default function Page() {
         </motion.div>
       </motion.section>
 
-      {/* ───────────────────────────────────────────── */}
+      {/* ------------------------------------------------ */}
       {/* ⭐ WHY */}
-      {/* ───────────────────────────────────────────── */}
+      {/* ------------------------------------------------ */}
       <motion.section
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, margin: "-120px" }}
+        viewport={{ once: true, margin: "-140px" }}
         variants={sectionVariants}
         className="max-w-6xl mx-auto mt-32 px-4 grid grid-cols-1 md:grid-cols-3 md:gap-8 gap-12"
       >
+        {/* Card grande */}
         <motion.div
           variants={fade}
-          className="md:col-span-2 rounded-3xl p-8 border border-gray-200 dark:border-[#28294D] 
-          bg-white dark:bg-[#1B1B29] shadow-sm flex flex-col justify-center"
+          className="md:col-span-2 rounded-3xl p-8 border border-gray-200 dark:border-[#28294D]
+            bg-white dark:bg-[#1B1B29] shadow-sm flex flex-col justify-center"
         >
           <Icon
             icon="lucide:bar-chart-3"
@@ -138,6 +156,7 @@ export default function Page() {
           </p>
         </motion.div>
 
+        {/* Dos cards pequeñas */}
         <div className="flex flex-col justify-between gap-8">
           {[
             ["lucide:wallet", t("why2Title"), t("why2Desc")],
@@ -146,43 +165,40 @@ export default function Page() {
             <motion.div
               key={i}
               variants={fade}
-              className="rounded-3xl p-6 border border-gray-200 dark:border-[#28294D] 
+              className="rounded-3xl p-6 border border-gray-200 dark:border-[#28294D]
                 bg-white dark:bg-[#1B1B29] shadow-sm"
             >
               <Icon icon={icon} className="w-10 h-10 text-[#6065E3]" />
               <h3 className="mt-4 text-xl font-semibold dark:text-white">
                 {title}
               </h3>
-              <p className="mt-2 text-[#707070] dark:text-[#A0A0A0] leading-relaxed">
-                {desc}
-              </p>
+              <p className="mt-2 text-[#707070] dark:text-[#A0A0A0]">{desc}</p>
             </motion.div>
           ))}
         </div>
       </motion.section>
 
-      {/* ───────────────────────────────────────────── */}
-      {/* ⭐ EXPERIENCE — Animación 1 sola vez */}
-      {/* ───────────────────────────────────────────── */}
-
+      {/* ------------------------------------------------ */}
+      {/* ⭐ EXPERIENCE */}
+      {/* ------------------------------------------------ */}
       <motion.section
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, margin: "-120px" }} // 👈 animación solo 1 vez
+        viewport={{ once: true, margin: "-140px" }}
         variants={sectionVariants}
         className="mx-auto mt-40 max-w-6xl px-4"
       >
+        {/* Title */}
         <motion.h2
           variants={fade}
-          viewport={{ once: true }} // 👈 solo 1 vez
           className="text-4xl font-bold text-center dark:text-white"
         >
           {t("experienceTitle")}
         </motion.h2>
 
+        {/* Subtitle */}
         <motion.p
           variants={fade}
-          viewport={{ once: true }} // 👈 solo 1 vez
           className="mt-4 text-center text-[#707070] dark:text-[#A0A0A0] max-w-2xl mx-auto"
         >
           {t("experienceSubtitle")}
@@ -191,11 +207,10 @@ export default function Page() {
         {/* Mockup */}
         <motion.div
           variants={fade}
-          viewport={{ once: true }} // 👈 solo 1 vez
           className="mt-14 mx-auto rounded-3xl bg-white dark:bg-[#1B1B29]
-      border border-gray-200 dark:border-[#28294D] shadow-xl p-10 w-full"
+            border border-gray-200 dark:border-[#28294D] shadow-xl p-10 w-full"
         >
-          {/* Balance */}
+          {/* Balance row */}
           <div className="flex items-center justify-between">
             <p className="text-xl font-semibold dark:text-white">
               {t("balanceLabel")}
@@ -205,7 +220,7 @@ export default function Page() {
             </p>
           </div>
 
-          {/* Income / expense */}
+          {/* Income/Expense */}
           <div className="flex items-center justify-between mt-6 text-base font-semibold">
             <p className="text-green-600 dark:text-green-400">{t("income")}</p>
             <p className="text-red-500 dark:text-red-400">{t("expenses")}</p>
@@ -214,7 +229,7 @@ export default function Page() {
           {/* Divider */}
           <div className="h-[1px] bg-gray-200 dark:bg-[#2D2F45] my-8" />
 
-          {/* Progress bars — OPTIMIZADAS (solo 1 vez + scaleX) */}
+          {/* Bars */}
           <div className="space-y-8">
             {[
               {
@@ -238,7 +253,7 @@ export default function Page() {
                 value: 0.21,
               },
             ].map((item, i) => (
-              <motion.div key={i} variants={fade} viewport={{ once: true }}>
+              <motion.div key={i} variants={fade}>
                 <div className="flex justify-between mb-2">
                   <p className="font-medium dark:text-white">{item.label}</p>
                   <p className="font-semibold dark:text-white">{item.amount}</p>
@@ -248,7 +263,7 @@ export default function Page() {
                   <motion.div
                     initial={{ scaleX: 0 }}
                     whileInView={{ scaleX: item.value }}
-                    viewport={{ once: true }} // 👈 animación 1 sola vez
+                    viewport={{ once: true }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     className="h-full bg-gradient-to-r from-[#6065E3] to-[#A7A9F2] origin-left"
                     style={{ willChange: "transform" }}
@@ -260,13 +275,13 @@ export default function Page() {
         </motion.div>
       </motion.section>
 
-      {/* ───────────────────────────────────────────── */}
+      {/* ------------------------------------------------ */}
       {/* ⭐ HOW IT WORKS */}
-      {/* ───────────────────────────────────────────── */}
+      {/* ------------------------------------------------ */}
       <motion.section
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, margin: "-130px" }}
+        viewport={{ once: true, margin: "-140px" }}
         variants={sectionVariants}
         className="max-w-6xl mx-auto mt-40 text-center"
       >
@@ -284,6 +299,7 @@ export default function Page() {
           {t("howSubtitle")}
         </motion.p>
 
+        {/* 3 Steps */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-14">
           {[
             ["lucide:plus-circle", t("how1Title"), t("how1Desc")],
@@ -306,9 +322,9 @@ export default function Page() {
         </div>
       </motion.section>
 
-      {/* ───────────────────────────────────────────── */}
+      {/* ------------------------------------------------ */}
       {/* ⭐ TRACK */}
-      {/* ───────────────────────────────────────────── */}
+      {/* ------------------------------------------------ */}
       <motion.section
         initial="hidden"
         whileInView="show"
@@ -330,6 +346,7 @@ export default function Page() {
           {t("trackSubtitle")}
         </motion.p>
 
+        {/* Categories */}
         <div className="flex flex-wrap justify-center gap-4 mt-16">
           {[
             ["lucide:shopping-bag", t("trackGroceries")],
@@ -354,19 +371,20 @@ export default function Page() {
         </div>
       </motion.section>
 
-      {/* ───────────────────────────────────────────── */}
-      {/* ⭐ PRIVACY */}
-      {/* ───────────────────────────────────────────── */}
+      {/* ------------------------------------------------ */}
+      {/* ⭐ PRIVACY  (ESTA SECCIÓN TENÍA EL ERROR) */}
+      {/* ------------------------------------------------ */}
       <motion.section
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, margin: "-120px" }}
-        variants={fade}
+        variants={sectionVariants}
         className="max-w-5xl mx-auto mt-48 px-4"
       >
-        <div
+        <motion.div
+          variants={fade}
           className="rounded-3xl border border-gray-200 dark:border-[#2D2F45]
-          bg-white dark:bg-[#1B1B29] p-12 shadow-sm flex flex-col md:flex-row items-center gap-10"
+            bg-white dark:bg-[#1B1B29] p-12 shadow-sm flex flex-col md:flex-row items-center gap-10"
         >
           <Icon icon="lucide:shield" className="w-16 h-16 text-[#6065E3]" />
 
@@ -374,6 +392,7 @@ export default function Page() {
             <h2 className="text-4xl font-bold dark:text-white">
               {t("privacyTitle")}
             </h2>
+
             <p className="mt-3 text-[#707070] dark:text-[#A0A0A0] max-w-xl">
               {t("privacySubtitle")}
             </p>
@@ -384,12 +403,12 @@ export default function Page() {
               <li>{t("privacyBullet3")}</li>
             </ul>
           </div>
-        </div>
+        </motion.div>
       </motion.section>
 
-      {/* ───────────────────────────────────────────── */}
+      {/* ------------------------------------------------ */}
       {/* ⭐ ROADMAP */}
-      {/* ───────────────────────────────────────────── */}
+      {/* ------------------------------------------------ */}
       <motion.section
         initial="hidden"
         whileInView="show"
@@ -422,7 +441,7 @@ export default function Page() {
             <motion.div key={i} variants={fade} className="relative">
               <div
                 className="absolute -left-[1.63rem] top-2 w-4 h-4 rounded-full
-                bg-[#6065E3] dark:bg-[#A7A9F2]"
+                  bg-[#6065E3] dark:bg-[#A7A9F2]"
               />
               <h3 className="text-xl font-semibold dark:text-white">{label}</h3>
               <span className="mt-1 inline-block text-sm text-[#6065E3] dark:text-[#A7A9F2]">
@@ -433,15 +452,15 @@ export default function Page() {
         </div>
       </motion.section>
 
-      {/* ───────────────────────────────────────────── */}
+      {/* ------------------------------------------------ */}
       {/* ⭐ FAQ */}
-      {/* ───────────────────────────────────────────── */}
+      {/* ------------------------------------------------ */}
       <motion.section
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, margin: "-100px" }}
         variants={sectionVariants}
-        className="max-w-4xl mx-auto mt-48 px-4"
+        className="max-w-4xl mx-auto mt-48 px-4 mb-20"
       >
         <motion.h2
           variants={fade}

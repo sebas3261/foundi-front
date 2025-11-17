@@ -28,6 +28,57 @@
     "twitterDescription": "Organize your money with Foundi. Simple, private, and designed for real people.",
     "author": "Foundi Team",
     "publisher": "Foundi Finance",
-    "copyright": "© 2025"
+    "copyright": "© 2025",
+
+    "ourteamTitle": "Our Team | Foundi Finance",
+    "ourteamDescription": "Learn about the mission, values, and story behind Foundi Finance.",
+    "ourteamOgTitle": "Our Team",
+    "ourteamOgDescription": "Transparency, security, and purpose at Foundi Finance.",
+    "ourteamTwitterTitle": "Our Team | Foundi",
+    "ourteamTwitterDescription": "Discover the story behind Foundi Finance.",
+    "ourteamKeywords": [
+      "foundi",
+      "team",
+      "story",
+      "personal finance",
+      "finance app"
+    ],
+    "ourteamSiteName": "Foundi Finance",
+    "ourteamAuthor": "Foundi Team",
+    "ourteamPublisher": "Foundi Finance",
+
+    "contactTitle": "Contact Us | Foundi Finance",
+  "contactDescription": "Get in touch with the Foundi team for support, questions, or partnership inquiries.",
+  "contactOgTitle": "Contact Foundi",
+  "contactOgDescription": "Reach out for help, support or collaboration.",
+  "contactTwitterTitle": "Contact Us | Foundi Finance",
+  "contactTwitterDescription": "Connect with the Foundi team.",
+  "contactKeywords": [
+    "foundi",
+    "contact",
+    "support",
+    "help",
+    "customer service"
+  ],
+  "contactSiteName": "Foundi Finance",
+  "contactAuthor": "Foundi Support",
+  "contactPublisher": "Foundi Finance",
+
+  "premiumTitle": "Premium | Foundi Finance",
+  "premiumDescription": "Unlock advanced analytics, multi-device sync and exclusive premium tools.",
+  "premiumOgTitle": "Foundi Premium",
+  "premiumOgDescription": "Access powerful upgrades to manage your finances like never before.",
+  "premiumTwitterTitle": "Premium | Foundi Finance",
+  "premiumTwitterDescription": "Take your financial management to the next level.",
+  "premiumKeywords": [
+    "foundi premium",
+    "subscriptions",
+    "finance app",
+    "analytics",
+    "expense tracker"
+  ],
+  "premiumSiteName": "Foundi Finance",
+  "premiumAuthor": "Foundi Team",
+  "premiumPublisher": "Foundi Finance"
   }
 }
