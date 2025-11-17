@@ -5,36 +5,34 @@ import { useTranslations, useLocale } from "next-intl";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 
-/* -------------------------------------------- */
-/* ANIMACIONES */
-/* -------------------------------------------- */
+/* ------------------------------------------------ */
+/* ANIMACIONES — MOBILE FIRST (ultra suaves)        */
+/* ------------------------------------------------ */
 
 const fade: Variants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    y: 0,
-    transition: { duration: 0.45, ease: "easeOut" },
+    transition: { duration: 0.28, ease: "easeOut" },
   },
 };
 
-// ⭐ FIX IMPORTANTE: EL CONTENEDOR NECESITA PROPS REALES
 const container: Variants = {
-  hidden: { opacity: 0 }, // 👈 Antes vacío → animaciones NO se activaban
+  hidden: { opacity: 0 },
   show: {
     opacity: 1,
     transition: {
-      duration: 0.3,
-      staggerChildren: 0.18,
-      delayChildren: 0.05,
+      duration: 0.25,
+      staggerChildren: 0.1,
+      delayChildren: 0.03,
       ease: "easeOut",
     },
   },
 };
 
-/* -------------------------------------------- */
-/* COMPONENTE */
-/* -------------------------------------------- */
+/* ------------------------------------------------ */
+/* COMPONENTE CONTACT                               */
+/* ------------------------------------------------ */
 
 export default function ContactPage() {
   const t = useTranslations("contact");
@@ -53,7 +51,7 @@ export default function ContactPage() {
     <main key={locale} className="px-6 md:px-12 mt-24 max-w-5xl mx-auto">
 
       {/* ----------------------------------------------------- */}
-      {/* ⭐ HERO NUEVO */}
+      {/* ⭐ HERO — Suave y fluido */}
       {/* ----------------------------------------------------- */}
       <motion.section
         key={"hero-" + locale}
@@ -66,30 +64,27 @@ export default function ContactPage() {
           <Icon icon="lucide:mail-plus" className="w-16 h-16 text-[#6065E3]" />
         </motion.div>
 
-        <motion.h1
-          variants={fade}
-          className="text-4xl md:text-6xl font-bold dark:text-white tracking-tight"
-        >
+        <motion.h1 variants={fade} className="text-4xl md:text-6xl font-bold dark:text-white">
           {t("title")}
         </motion.h1>
 
         <motion.p
           variants={fade}
-          className="mt-5 text-lg md:text-xl text-[#6F6F6F] dark:text-[#B0B0B0] leading-relaxed"
+          className="mt-5 text-lg md:text-xl text-[#6F6F6F] dark:text-[#B0B0B0]"
         >
           {t("subtitle")}
         </motion.p>
       </motion.section>
 
       {/* ----------------------------------------------------- */}
-      {/* ⭐ CONTACT OPTIONS — CARDS (ANIMAN PERFECTO AHORA) */}
+      {/* ⭐ CONTACT OPTIONS — Cards súper fluidas */}
       {/* ----------------------------------------------------- */}
       <motion.section
         key={"cards-" + locale}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.2 }} // 🔥 reliable trigger
-        variants={container} // ⭐ contenedor sí anima
+        viewport={{ once: true, amount: 0.25 }}
+        variants={container}
         className="mt-28 grid md:grid-cols-3 gap-8"
       >
         {[
@@ -116,8 +111,7 @@ export default function ContactPage() {
             key={i}
             variants={fade}
             className="group p-8 rounded-3xl border border-gray-200 dark:border-[#2A2A44]
-              bg-white dark:bg-[#181824] shadow-sm hover:shadow-xl transition cursor-pointer
-              hover:border-[#6065E3] dark:hover:border-[#6065E3]"
+              bg-white dark:bg-[#181824] shadow-sm hover:shadow-xl transition"
             onClick={() => (window.location.href = c.link)}
           >
             <div className="flex justify-center">
@@ -131,7 +125,7 @@ export default function ContactPage() {
               {c.title}
             </h3>
 
-            <p className="mt-3 text-[#707070] dark:text-[#A0A0A0] leading-relaxed text-center">
+            <p className="mt-3 text-[#707070] dark:text-[#A0A0A0] text-center">
               {c.text}
             </p>
           </motion.div>
@@ -139,20 +133,17 @@ export default function ContactPage() {
       </motion.section>
 
       {/* ----------------------------------------------------- */}
-      {/* ⭐ FORMULARIO PREMIUM */}
+      {/* ⭐ FORMULARIO — Fade-only para no joder rendimiento */}
       {/* ----------------------------------------------------- */}
       <motion.section
         key={"form-" + locale}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.25 }}
         variants={container}
         className="mt-40"
       >
-        <motion.h2
-          variants={fade}
-          className="text-3xl md:text-5xl font-bold dark:text-white text-center"
-        >
+        <motion.h2 variants={fade} className="text-3xl md:text-5xl font-bold dark:text-white text-center">
           {t("formTitle")}
         </motion.h2>
 
