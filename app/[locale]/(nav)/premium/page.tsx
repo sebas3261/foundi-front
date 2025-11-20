@@ -140,7 +140,7 @@ export default function Page() {
             </p>
 
             <a
-              href={`/${locale}/login`}
+              href={`/${locale}/signup`}
               className="inline-block w-full mt-8 py-3 rounded-xl bg-[#6065E3] 
               text-white font-semibold hover:bg-[#4E50D1] transition"
             >
@@ -175,7 +175,7 @@ export default function Page() {
             </p>
 
             <a
-              href={`/${locale}/login`}
+              href={`/${locale}/signup`}
               className="inline-block w-full mt-8 py-3 rounded-xl bg-[#6065E3] 
               text-white font-semibold hover:bg-[#4E50D1] transition"
             >

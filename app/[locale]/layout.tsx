@@ -50,7 +50,6 @@ export default async function RootLayout({
         className={`
         ${montserrat.variable} 
         antialiased 
-        pt-[74px] 
         bg-white dark:bg-[#0F0F0F]   // ⭐ FIX SAFARI
       `}
       >

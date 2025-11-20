@@ -6,7 +6,9 @@ export default function NavLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <NavBar />
+      <div className="pt-[74px] ">
       {children}
+      </div>
       <Footer/>
     </>
   );

@@ -3,6 +3,7 @@
 import { Icon } from "@iconify/react";
 import { motion, type Variants } from "framer-motion";
 import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 
 /* -------------------------------------------------------
    🔥 GPU-friendly fade — OPACIDAD + TRANSFORM
@@ -93,20 +94,22 @@ export default function Page() {
           variants={fade}
           className="flex flex-col sm:flex-row gap-4 mt-8 justify-center items-center"
         >
-          <button
+          <Link
+            href="/signup"
             className="px-8 py-3 rounded-xl text-white font-semibold 
-              bg-gradient-to-r from-[#6065E3] to-[#A7A9F2] hover:opacity-90 transition cursor-pointer dark:bg-[#6065E3]"
+              bg-gradient-to-r from-[#6065E3] to-[#A7A9F2] hover:opacity-90 transition cursor-pointer dark:bg-[#6065E3] dark:bg-none dark:bg-[#6065E3]"
           >
             {t("start-button")}
-          </button>
+          </Link>
 
-          <button
+          <Link
+            href="/premium"
             className="px-8 py-3 rounded-xl font-semibold border-2 border-[#6065E3]
               text-[#6065E3] dark:text-[#A7A9F2] dark:border-[#A7A9F2]
               hover:bg-[#E9EAF8] dark:hover:bg-[#1B1B29] transition cursor-pointer"
           >
             {t("premium-button")}
-          </button>
+          </Link>
         </motion.div>
 
         {/* Under-text */}

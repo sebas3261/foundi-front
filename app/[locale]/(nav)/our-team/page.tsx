@@ -276,7 +276,7 @@ export default function Page() {
 
         <motion.a
           variants={fade}
-          href={`/${locale}/login`}
+          href={`/${locale}/signup`}
           className="inline-block mt-8 px-8 py-4 bg-[#6065E3] text-white font-semibold rounded-xl shadow-md hover:bg-[#5054d1] transition"
         >
           {t("ctaButton")}

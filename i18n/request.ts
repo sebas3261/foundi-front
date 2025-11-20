@@ -16,7 +16,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   }
 
   // Cargar varios archivos de traducción
-  const [common, navbar, seo, home, footer, ourteam, contact, premuim] = await Promise.all([
+  const [common, navbar, seo, home, footer, ourteam, contact, premuim, auth] = await Promise.all([
     import(`../messages/${locale}/common.json`),
     import(`../messages/${locale}/navbar.json`),
     import(`../messages/${locale}/seo.json`),
@@ -24,7 +24,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
     import(`../messages/${locale}/footer.json`),
     import(`../messages/${locale}/our-team.json`),
     import(`../messages/${locale}/contact.json`),
-    import(`../messages/${locale}/premium.json`)
+    import(`../messages/${locale}/premium.json`),
+    import(`../messages/${locale}/auth.json`)
   ]);
 
   // Combinar en un solo objeto
@@ -38,7 +39,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...footer.default,
       ...ourteam.default,
       ...contact.default,
-      ...premuim.default    
+      ...premuim.default,
+      ...auth.default    
     }
   };
 });
