@@ -71,9 +71,7 @@ export default function Page() {
         </motion.p>
       </motion.section>
 
-      {/* ------------------------------------------------ */}
       {/* ⭐ 3 PILARES */}
-      {/* ------------------------------------------------ */}
       <motion.section
         initial="hidden"
         whileInView="show"

@@ -1,0 +1,58 @@
+{
+  "premium": {
+    "badge": "Foundi Premium",
+    "title": "Lleva tus finanzas al siguiente nivel",
+    "subtitle": "Desbloquea herramientas avanzadas para entender, analizar y organizar mejor tu dinero.",
+
+    "f1Title": "Sincronización en la nube",
+    "f1Text": "Accede a tus datos desde cualquier dispositivo, siempre actualizados.",
+    "f2Title": "Seguridad avanzada",
+    "f2Text": "Protección cifrada extremo a extremo y sesiones seguras.",
+    "f3Title": "Análisis avanzado",
+    "f3Text": "Reportes detallados, predicciones y patrones personalizados.",
+    "f4Title": "Exportación PDF",
+    "f4Text": "Descarga reportes financieros listos para compartir.",
+    "f5Title": "Categorías ilimitadas",
+    "f5Text": "Crea todas las categorías que necesites.",
+    "f6Title": "Presupuestos y metas",
+    "f6Text": "Organiza tus objetivos financieros con recordatorios inteligentes.",
+
+    "choose": "Elige tu plan",
+    "chooseSubtitle": "Sin permanencia. Cancela cuando quieras.",
+    "monthly": "Mensual",
+    "monthlyPrice": "$4.99",
+    "monthlyDesc": "Facturación mensual",
+    "bestValue": "Mejor opción",
+    "yearly": "Anual",
+    "yearlyPrice": "$49.99",
+    "yearlyDesc": "Ahorra más con el plan anual",
+
+    "cta": "Comenzar ahora",
+
+    "benefitsTitle": "Todo lo que obtienes con Premium",
+    "b1": "Sincronización automática en todos tus dispositivos.",
+    "b2": "Categorías personalizadas ilimitadas.",
+    "b3": "Reportes avanzados en PDF.",
+    "b4": "Presupuestos y metas personalizadas.",
+    "b5": "Acceso anticipado a nuevas funciones.",
+    "b6": "Análisis avanzados y recomendaciones.",
+    "b7": "Historial completo sin límites.",
+    "b8": "Modo seguro con doble verificación.",
+    "b9": "Prioridad en soporte.",
+    "b10": "Acceso a herramientas exclusivas de organización financiera.",
+
+    "faqTitle": "Preguntas frecuentes",
+    "faq1Q": "¿Puedo cambiar de plan en cualquier momento?",
+    "faq1A": "Sí. Puedes cambiar de plan o cancelar cuando quieras desde tu configuración de cuenta.",
+    "faq2Q": "¿Pierdo mis datos si cancelo Premium?",
+    "faq2A": "No. Tus datos permanecen en tu cuenta, aunque perderás acceso a funciones avanzadas.",
+    "faq3Q": "¿Mi suscripción se renueva automáticamente?",
+    "faq3A": "Sí. Puedes desactivar la renovación automática cuando quieras.",
+    "faqRefundQ": "¿Ofrecen reembolsos?",
+    "faqRefundA": "No. Premium se activa inmediatamente y el servicio se utiliza desde el primer momento, por lo que no es reembolsable.",
+
+    "finalTitle": "¿Listo para comenzar?",
+    "finalSubtitle": "Únete a miles de usuarios que ya están organizando mejor su dinero.",
+    "finalCTA": "Comenzar con Premium"
+  }
+}

@@ -12,6 +12,7 @@
     "formName": "Your name",
     "formEmail": "Your email",
     "formMessage": "Your message",
-    "send": "Send message"
+    "send": "Send message",
+    "formSubtitle": "Tell us how we can help you."
   }
 }

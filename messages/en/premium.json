@@ -1,0 +1,59 @@
+{
+  "premium": {
+  "badge": "Foundi Premium",
+  "title": "Take your finances to the next level",
+  "subtitle": "Unlock advanced tools to understand, analyze, and organize your money better.",
+
+  "f1Title": "Cloud sync",
+  "f1Text": "Access your data from any device, always up to date.",
+  "f2Title": "Advanced security",
+  "f2Text": "End-to-end encrypted protection and secure sessions.",
+  "f3Title": "Advanced analytics",
+  "f3Text": "Detailed reports, predictions, and personalized insights.",
+  "f4Title": "PDF export",
+  "f4Text": "Download professional-ready financial reports.",
+  "f5Title": "Unlimited categories",
+  "f5Text": "Create as many categories as you need.",
+  "f6Title": "Budgets and goals",
+  "f6Text": "Organize your financial goals with smart reminders.",
+
+  "choose": "Choose your plan",
+  "chooseSubtitle": "No commitment. Cancel anytime.",
+  "monthly": "Monthly",
+  "monthlyPrice": "$4.99",
+  "monthlyDesc": "Billed monthly",
+  "bestValue": "Best value",
+  "yearly": "Yearly",
+  "yearlyPrice": "$49.99",
+  "yearlyDesc": "Save more with the yearly plan",
+
+  "cta": "Start now",
+
+  "benefitsTitle": "Everything you get with Premium",
+  "b1": "Automatic sync across all your devices.",
+  "b2": "Unlimited custom categories.",
+  "b3": "Advanced reports in PDF format.",
+  "b4": "Custom budgets and goals.",
+  "b5": "Early access to new features.",
+  "b6": "Advanced analytics and insights.",
+  "b7": "Full history without limits.",
+  "b8": "Secure mode with two-step verification.",
+  "b9": "Priority support.",
+  "b10": "Access to exclusive financial tools.",
+
+  "faqTitle": "Frequently asked questions",
+  "faq1Q": "Can I change plans at any time?",
+  "faq1A": "Yes. You can change or cancel your plan anytime from your account settings.",
+  "faq2Q": "Do I lose my data if I cancel Premium?",
+  "faq2A": "No. Your data stays in your account, but advanced features will be disabled.",
+  "faq3Q": "Does my subscription renew automatically?",
+  "faq3A": "Yes. You can disable auto-renewal at any time.",
+  "faqRefundQ": "Do you offer refunds?",
+  "faqRefundA": "No. Premium activates immediately and the service begins from the first moment, so it is not refundable.",
+
+  "finalTitle": "Ready to get started?",
+  "finalSubtitle": "Join thousands of users who are already improving their finances.",
+  "finalCTA": "Start with Premium"
+}
+
+}
